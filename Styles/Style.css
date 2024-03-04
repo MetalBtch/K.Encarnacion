@@ -67,10 +67,7 @@ End CSS Reset
 */
 body {
     margin: 0px;
-    background-color:#22232a;
-        font-family: "Cinzel", serif;
-        font-weight: <400>;
-        font-style: normal;
+    background-color: indianred ;
 }
 
 header,
@@ -81,18 +78,6 @@ footer {
 
 header  h1{
     float: left;
-    width: fit-content;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    padding: 40px 0 0 0;
-    font-size: 48px;
-    border-top: 5px solid #4450ba;;
-}
-
-header h2{
-    font-size: 24px;
-    padding: 20px 0 20px 0;
-    text-align: right;
 }
 
 header a {
@@ -101,76 +86,21 @@ header a {
     color: whitesmoke;
     text-align: center;
     padding: 14px 16px;
-    background-color: #383b51;
+    background-color: rgb(108, 33, 33);
     text-decoration: none;
 }
 
-header a.active {
-background-color: #383b51;
-color: #f5f5f5;
-}
-
 header a:hover {
-    background-color: #6a6e8a;
-    color: #ffffff;
+    background-color: black;
 }
 
 header, 
 footer, 
 article {
-    padding: 0 12.5% 0 12.5%;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 article {
-    background-color: rgb(234, 237, 253);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: whitesmoke;
 }
-
-article h1{
-    width: fit-content;
-font-size: 30px;
-color: #4450ba;
-border-bottom: 2px solid #4450ba;
-padding-top: 10px;
-margin-bottom: 20px;
-}
-
-h3{
-    width: fit-content;
-font-size: 19px;
-color: #447fba;
-border-bottom: 2px solid #447fba;
-padding-top: 10px;
-margin-bottom: 20px;
-}
-
-h4{
-    width: fit-content;
-font-size: 19px;
-color: #000000;
-padding-top: 10px;
-margin-bottom: 20px;
-}
-
-article p{
-    line-height: 20px;
-}
-
-footer a {
-    float: right;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0 20px 0 20px;
-}
-
-footer a.active {
-    color: #4450ba;
-}
-
-footer a:hover {
-    color: #000000;
-}
-ul.a {
-    list-style-type: circle;
-  }
