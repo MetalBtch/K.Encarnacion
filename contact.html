@@ -22,16 +22,37 @@
 </header>
 
 <article>
-    <h1>Contact</h1>
-<h3>Contact Emails:</h3>
-<li>kyleencarnacion52@gmail.com</li>
-<li>geo.benefits@gmail.com</li>
+    <h1>Contact Form</h1>
 
-<h1>Contact Numbers</h1>
-<li>954-297-7885</li>
-<li>754-610-2758</li>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="name">Name</label>
+    <input type="text" id="name" 
+    name="name" 
+    placeholder="Your name..">
 
+    <label for="email">Email</label>
+    <input type="text" 
+    id="email" 
+    name="email" 
+    placeholder="name@example.com">
 
+    <label for="subject">Subject</label>
+    <input type="text" 
+    id="subject" 
+    name="subject" 
+    placeholder="SUBJECT">
+
+    <label for="body">Body</label>
+    <textarea id="body" 
+    name="body" 
+    placeholder="Your message here..." 
+    style="height:200px">
+</textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
 </article>
 
 <footer>
