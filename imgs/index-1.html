@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+       <title>Test Form</title>
+   </head>
+
+   <body>
+       <form action="example.com" target="_blank">
+         <fieldset>
+             <legend>Sign-Up:</legend>
+             
+           <label for="uName">User Name:</label>
+           <br />
+           <input type="text" id="uName" name="uName" placeholder="User Name..." required />
+           <br />
+           <label for="password">Password</label>
+           <input type="password" id="password" name="Password" 
+           pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{6,16}$" required />
+           <br />
+           <label for="birthday">Birthday</label>
+           <input type="date" id="birtday" name="Birtday" required />
+           <br/>
+           <label for="email">Email</label>
+           <input type="email" id="email" name="Email" placeholder="example@example.com" required />
+
+           <br />
+           <br />
+
+           <label for="isAdmin">Are You An Admin?:</label>
+           <select id="isAdmin" name="isAdmin">
+           <option value="admin">Admin</option>
+           <option value="user" selected>User</option>
+           </select>
+           <br />
+
+           <p>Choose Your Favorite Game Genres</p>
+           <input type="checkbox" id="rpg" name="rpg" value="RPG" />
+           <label for="rpg">RPG</label>
+           <br />
+           <input type="checkbox" id="horror" name="horror" value="Horror" />
+           <label for="horror">Horror</label>
+           <br />
+           <input type="checkbox" id="actionAdventure" name="actionAdventure" value="ActionAdventure" />
+           <label for="actionAdventure">Action-Adventure</label>
+           <br />
+           <input type="checkbox" id="hackAndSlash" name="hackAndSlash" value="HackAndSlash" />
+           <label for="hackAndSlash">Hack and Slash</label>
+           <br />
+           <input type="checkbox" id="fps" name="fps" value="FPS" />
+           <label for="fps">FPS</label>
+           <br />
+           <input type="checkbox" id="beatEmUp" name="beatEmUp" value="BeatEmUp" />
+           <label for="beatEmUp">Beat 'Em Up</label>
+           <br />
+           <input type="checkbox" id="battleRoyal" name="battleRoyal" value="BattleRoyal" />
+           <label for="battleRoyal">Battle Royal</label>
+           <br />
+           <input type="submit" value="Submit" onclick="showData()" />
+            </fieldset>
+       </form>
+
+       <p id="para"></p>
+   </body>
+   <script>
+       function showData(){
+           let y = 
+               ' is a(n) ' + document.getElementById("isAdmin").value + '.';
+           let x = document.getElementById('uName').value;
+           document.getElementById('para').innerHTML = x + y;
+       }
+   </script>
+</html>
