@@ -200,6 +200,7 @@ width: 25%;
  background-color: #b5caeb;
  padding: 10px;
  min-width: 224px;
+ min-height: 490px;
 }
 
 .content h3 {
@@ -316,4 +317,4 @@ input[type=text], select, textarea {
     }
 }
 
-/* Update */
+/*cut and repaste*/
